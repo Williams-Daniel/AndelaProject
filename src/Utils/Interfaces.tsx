@@ -6,4 +6,5 @@ export interface iButtons {
     text?:string,
     fns?:string
     ML?:string
+    MR?:string
 }

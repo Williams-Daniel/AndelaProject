@@ -12,7 +12,8 @@ const GlobalButton:React.FC<iButtons> = ({
     col,
     text,
     fns,
-    ML
+    ML,
+    MR
 })=>{
     return(
         <div>
@@ -21,6 +22,7 @@ const GlobalButton:React.FC<iButtons> = ({
             hei={`${hei}`}
             bg={`${bg}`}
             ML={`${ML}`}
+            MR={`${MR}`}
             >
                 <Text 
                 col={`${col}`}
@@ -33,7 +35,7 @@ const GlobalButton:React.FC<iButtons> = ({
 
 export default GlobalButton
 
-const Container = styled.div<{wid:string,hei:string,bg:string,ML:string}>`
+const Container = styled.div<{wid:string,hei:string,bg:string,ML:string,MR:string}>`
 width: ${({wid})=>wid};
 height: ${({hei})=>hei};
 border-radius: 50px;
@@ -42,6 +44,7 @@ justify-content: center;
 align-items: center;
 background-color: ${({bg})=>bg};
 margin-left: ${({ML})=>ML};
+margin-Right: ${({MR})=>MR};
 `
 const Text = styled.div<{fns:string,col:string}>`
 font-size: ${({fns})=>fns};
